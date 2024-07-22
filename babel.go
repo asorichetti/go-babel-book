@@ -6,7 +6,7 @@ import (
 	"time"
 )
 
-func WordGenerator(length int) string { //function designed to generate a random word after intaking the length of the word.
+func WordGenerator(length int) string { //function designed to generate a random string after intaking the length of the string.
 	const charset = "abcdefghijklmnopqrstuvwxyz"
 	seedRand := rand.New(rand.NewSource(time.Now().UnixNano()))
 	word := make([]byte, length)
