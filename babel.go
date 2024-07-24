@@ -20,14 +20,12 @@ func main() {
 
 	var a = rand.Intn(300)
 	var b [301]string
+	fmt.Println("This will be a book of babel simulation containing", a, "words.")
 
 	for i := 0; i < a; i++ {
 		l := rand.Intn(10) + 2
 		b[i] = WordGenerator(l)
 		fmt.Print(b[i], " ")
 	}
-
-	fmt.Println("This will be a book of babel simulation")
-	fmt.Println("", a)
 
 }
